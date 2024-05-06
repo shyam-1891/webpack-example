@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  margin: 0 !important;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  overflow-y: scroll !important;
+}
+
+body {
+  color: #d7d7d7;
+  font-family: "Fira Sans", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  position: relative;
+}
+
+ul:not(.toolbar-menu) {
+  margin: -4px 0 -4px 20px;
+  padding: 0;
+
+  li:not(.menu-item) {
+    margin: 4px 0;
+
+    ul {
+      margin: 4px 0 8px 20px;
+    }
+  }
+}
+
+ol {
+  margin: 0 0 0 27px;
+}
+
+img {
+  margin: 0;
+  display: block;
+}
+
+sup {
+  top: -0.8em;
+}
+
+sub,
+sup {
+  font-size: 50%;
+}
+
+hr {
+  margin: 45px 0;
+  border-color: #d7d7d7;
+}
+
+table,
+.table,
+.table-responsive {
+  margin-bottom: 35px;
+
+  @media (max-width: 767px) {
+    font-size: 14px !important;
+  }
+}
+
+.table-responsive .table {
+  margin-bottom: 0;
+}
+
+blockquote:not(.blockquote) {
+  margin: 0;
+  padding: 15px 30px 15px 45px;
+
+  em {
+    color: #d7d7d7;
+    font-size: 14px;
+  }
+
+  @media print {
+    border: none;
+  }
+}
+
+/* Remove the 'X' from input controls in IE
+Remove the reveal from password input controls in IE */
+::-ms-clear,
+::-ms-reveal {
+  height: 0;
+  width: 0;
+  display: none;
+}
+
+/* Remove the 'X' from search control in Chrome */
+[type="search"]::-webkit-search-decoration,
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-results-button,
+[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+.container {
+  max-width: 1440px;
+  min-width: 977px;
+}
